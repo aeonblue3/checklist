@@ -285,34 +285,20 @@ a {
 <div id="div_group_1" class="example_group passed">
   <dl style="margin-left: 0px;">
   <dt id="example_group_1" class="passed">Task</dt>
-    <script type="text/javascript">moveProgressBar('50.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">is invalid without a name</span><span class='duration'>0.09277s</span></dd>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_1');</script>
-    <script type="text/javascript">makeRed('example_group_1');</script>
+    <script type="text/javascript">moveProgressBar('33.3');</script>
+    <dd class="example passed"><span class="passed_spec_name">is invalid without a name</span><span class='duration'>0.05180s</span></dd>
+    <script type="text/javascript">moveProgressBar('66.6');</script>
+    <dd class="example passed"><span class="passed_spec_name">is incomplete</span><span class='duration'>0.04052s</span></dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">can be complete</span>
-      <span class="duration">0.00637s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>undefined method `complete' for #&lt;Task:0x0000000360ed68&gt;</pre></div>
-        <div class="backtrace"><pre>./spec/models/task_spec.rb:11:in `block (2 levels) in <top (required)>'</pre></div>
-    <pre class="ruby"><code><span class="linenum">9</span>  it 'can be complete' do
-<span class="linenum">10</span>    task = Task.create!({:name => 'Take out the trash'})
-<span class="offending"><span class="linenum">11</span>    task.complete</span>
-<span class="linenum">12</span>    task.completed?.should be_true
-<span class="linenum">13</span>  end
-<span class="linenum">14</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">can be complete</span><span class='duration'>0.00371s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.10158 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "2 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.09670 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "3 examples, 0 failures";</script>
 </div>
 </div>
 </body>
 </html>
 
-Randomized with seed 55559
+Randomized with seed 38699
 

@@ -11,7 +11,7 @@ When /^I complete the task$/ do
 end
 
 Then /^the done state should be true$/ do
-    pending # express the regexp above with the code you wish you had
+  @task.completed?
 end
 
 When /^I delete the task$/ do
