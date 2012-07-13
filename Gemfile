@@ -30,7 +30,6 @@ group :test do
   gem 'webmock'
   gem 'database_cleaner'
   gem 'vcr'
-  gem 'turn'
 end
 
 # To use ActiveModel has_secure_password
