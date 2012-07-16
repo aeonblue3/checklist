@@ -1,26 +1,4 @@
-%h1 Listing tasks
-
-%table
-  %tr
-    %th Name
-    %th Desc
-    %th Due
-    %th Done
-    %th
-    %th
-    %th
-
-  - @tasks.each do |task|
-    %tr
-      %td= task.name
-      %td= task.desc
-      %td= task.due
-      %td= task.done
-      %td= link_to 'Show', task
-      %td= link_to 'Edit', edit_task_path(task)
-      %td= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete
-
-%br
+%h1 Task List
 
 %table
   - @tasks.each do |task|
