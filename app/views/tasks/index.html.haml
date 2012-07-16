@@ -22,4 +22,12 @@
 
 %br
 
+%table
+  - @tasks.each do |task|
+    %tr
+      %td= task.done
+      %td= task.name
+      %td= link_to 'Edit', edit_task_path(task)
+      %td= link_to '&times;', task, :confirm => 'Are you sure?', :method => :delete
+
 = link_to 'New Task', new_task_path
