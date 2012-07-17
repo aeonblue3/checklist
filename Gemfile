@@ -27,6 +27,7 @@ gem 'jquery-rails'
 group :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
+  gem 'capybara'
   gem 'webmock'
   gem 'database_cleaner'
   gem 'vcr'
