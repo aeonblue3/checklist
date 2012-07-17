@@ -1,11 +1,22 @@
 %h1 Task List
 
-%table
+%table.table
   - @tasks.each do |task|
-    %tr
-      %td= task.done
-      %td= task.name
-      %td= link_to 'Edit', edit_task_path(task)
-      %td= link_to '&times;', task, :confirm => 'Are you sure?', :method => :delete
+    .well
+      %span
+        -(task.done)?checked = "checked: 'yes":checked = ""
+        %input{type: "checkbox", name: "#{task.name}-checkbox"}
+      %span
+        %a{:href => "#", class: "name-popover", :id => "name-popover", "data-content" => task.desc, "data-original-title" => "Description"}
+          =task.name
+      %span.pull-right
+        %a{:class => "btn-mini btn-info", :href => edit_task_path(task)}
+          %i.icon-pencil
+          Edit
 
-= link_to 'New Task', new_task_path
+        %a{:class => "btn-mini btn-danger", :href => task_path(task), "data-confirm" => "Are you sure you want to delete this task?", "data-method" => "delete", "rel" => "nofollow"}
+          %i.icon-remove
+          Delete
+%a{href: new_task_path, class: "btn btn-success"}
+  %i.icon-plus
+    New Task

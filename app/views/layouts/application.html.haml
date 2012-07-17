@@ -22,10 +22,10 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") Checklist
+            %a.brand{:href => root_path} Checklist
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Link 1", "/path1"
+              %li= link_to "Tasks", tasks_path
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
 
@@ -33,19 +33,10 @@
 
       .content
         .row
-          .span9
+          .span12
             = yield
-          .span3
-            .well.sidebar-nav
-              %h3 Sidebar
-              %ul.nav.nav-list
-                %li.nav-header Sidebar
-                %li= link_to "Link 1", "/path1"
-                %li= link_to "Link 2", "/path2"
-                %li= link_to "Link 3", "/path3"
-    
       %footer
-        %p &copy; Company 2012
+        %p.small &copy; Company 2012
     /
       Javascripts
       \==================================================
