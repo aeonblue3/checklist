@@ -1,5 +1,10 @@
-%h1 Task List
-
+<h1>Task List</h1>
+  <% @task.each do |task| %>
+    <div class="well">
+      <span><% (task.done)?checked = "checked: 'yes":checked = "" %> <input type="checkbox" name="<%%>" value="">/</span>
+      <span></span>
+      <span></span>
+    </div>
 %table.table
   - @tasks.each do |task|
     .well

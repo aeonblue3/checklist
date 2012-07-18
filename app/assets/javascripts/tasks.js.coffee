@@ -3,3 +3,6 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $(".name-popover").each ->
   $(this).popover({})
+
+strikeOut = (id) ->
+  console.log(id)
