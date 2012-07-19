@@ -66,6 +66,7 @@ class TasksController < ApplicationController
         format.html { render action: "edit" }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
+      format.js
     end
   end
 
